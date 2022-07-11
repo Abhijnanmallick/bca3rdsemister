@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,10 +8,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>books</title>
     <style>
-        *
+*
 {
-    margin:0px;
-    padding:0px;
+    margin:0rem;
+    padding:0rem;
+}
+html{
+    font-size: 10px;
+    font-size:100.5%;
 }
 body
 {
@@ -27,10 +32,10 @@ body
 
 .minitab
 {
-    margin:-3px;
+    margin:-.3rem;
     height:10vh;
     /* background-color: white; */
-    filter: blur(25px);
+    filter: blur(2.5rem);
    
 }
 
@@ -39,14 +44,14 @@ body
 {
     /* display: flex; */
     justify-content: center;
-    padding:20px;
+    padding:2rem;
     background-color: rgba(0, 0, 0, 0.341);
     margin-left:21%;
-    height:250px;
-    width:800px;
-    margin-top:239px;
+    height:25rem;
+    width:80rem;
+    margin-top:23.9rem;
     
-    border-radius:50px 0px  50px 0px;
+    border-radius:5rem 0rem  5rem 0rem;
 } 
 
 a
@@ -57,13 +62,13 @@ a
 .book1
 {
    
-    font-size: 35px;
-    padding:9px;
+    font-size: 3.5rem;
+    padding:2rem;
     color:rgb(247, 0, 0);
     font-family:'Courier New', Courier, monospace;
     transition: 900ms;
     background-color:rgba(70, 66, 66, 0.681);
-    border-radius: 25px 25px 25px 25px;
+    border-radius: 2.5rem 2.5rem 2.5rem 2.5rem;
 }
 
 .book1:hover
@@ -75,17 +80,17 @@ a
 .book2
 {
    
-    font-size: 35px;
-    padding:9px;
+    font-size: 3.5rem;
+    padding: 0.9rem;
     color:rgb(255, 254, 254);
     font-family:'Courier New', Courier, monospace;
     transition: 900ms;
     background-color:transparent;
-    border-radius: 25px 25px 25px 25px;
+    border-radius: 2.5rem 2.5rem 2.5rem 2.5rem;
 }
 .book2:hover
 {
-    transform: matrix(1px);
+    transform: matrix(.1rem);
     background-color: white;
     color:black;
 }
@@ -93,18 +98,18 @@ a
 .java1
 {
    
-    font-size: 35px;
-    padding:9px;
+    font-size: 3.5rem;
+    padding:.9rem;
     color:rgb(0, 255, 51);
     
     font-family:'Courier New', Courier, monospace;
-    transition: 900ms;
+    transition: 900ms ease;
     background-color:transparent;
-    border-radius: 25px 25px 25px 25px;
+    border-radius: 2.5rem 2.5rem 25rem 25rem;
 }
 .java1:hover
 {
-    transform: matrix(1px);
+    transform: matrix(.1rem);
     background-color: white;
     color:rgb(255, 0, 0);
 }
@@ -115,10 +120,11 @@ a
 } */
 h1
 {
-    font-size:52px;
+    font-size:5.2rem;
     font-family: Georgia, 'Times New Roman', Times, serif;
     color:rgb(16, 48, 96);
-   
+   margin-top:0rem;
+   text-align: center;
     /* filter: blur(2px); */
     text-transform: uppercase;
     animation: animate 10s linear infinite;
@@ -193,25 +199,49 @@ h1
         text-shadow: none;
     }
 }
+@media only screen and (max-width: 1300px){
+    html{
+        font-size:40%;
+    }
+    h1{
+        background-color: rgba(255, 255, 255, 0.242);
+    }
+   a{
+    text-decoration: none;
+   }
+
+   .java1{
+    font-size:4rem;
+   }
+   .book1{
+    font-size:4rem;
+   }
+   .book2{
+    font-size:3rem;
+   }
+   .bca{
+    font-size:3rem;
+   }
+}
 
     </style>
 </head>
 <body>
-    
+    <h1 class="bca">BCA 3rd SEMISTER BOOKS</h1>
     <div class="bg_image">
         
-        <div class="minitab">
-        </div>
+        <div class="minitab"></div>
         
+        <div class="all_links">
                 <a href="https://www.vssut.ac.in/lecture_notes/lecture1423726024.pdf" class="book"><center style="margin-top: 257px;"><b class="book1">Operating system</b></center></a>
                 <a href="https://www.cs.bham.ac.uk/~jxb/DSA/dsa.pdf" class="book"><center style="margin-top:24px;"><b class="book2">Data Structure & Algorithm</b></center></a>
                 <a href="https://soaneemrana.org/onewebmedia/Professional%20Ethics%20and%20Human%20Values%20by%20R.S%20NAAGARAZAN.pdf" class="book"><center style="margin-top:24px;"><b class="book2">Value & Ethics Of Profession</b></center></a>
                 <a href="https://www.vssut.ac.in/lecture_notes/lecture1428551222.pdf" class="book"><center style="margin-top:24px;"><b class="book2">Design & Analysis Of Algorithms</b></center></a>
-                <a href="https://www.rcsdk12.org/cms/lib/NY01001156/Centricity/Domain/4951/Head_First_Java_Second_Edition.pdf" class="java"><center style="margin-top:24px;"><b class="java1" style="background-color: rgb(251, 251, 251);">Java(Object Oriented)</b></center></a>
-       
-                <h1 class="bca" style="margin-top:-603px;text-align: center;">BCA 3rd SEMISTER</h1>
-        
-        
+                <a href="https://www.rcsdk12.org/cms/lib/NY01001156/Centricity/Domain/4951/Head_First_Java_Second_Edition.pdf" class="java"><center style="margin-top:24px;"><b class="java1" style="background-color: rgba(0, 0, 0, 0.464);">Java(Object Oriented)</b></center></a>
+            </div>
+                
+            
+            
     </div>
     
 </body>
